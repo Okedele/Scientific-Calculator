@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator!</title>
+    <link rel="stylesheet" type="text/css" href="SciCalc.css" />
+    <script type="text/javascript" src="SciCalc.js"></script>
+</head>
+
+<body>
+    <div class="inputs">
+        <input id="adis" type="text" value="" readonly>
+        <input id="dis" type="text" placeholder="0" readonly>
+    </div>
+
+    <div id="scientific">
+        <div id="modemenu">
+            <span class="mode" id="hypmode" onclick='hypmodetoggle()'>Hyp</span>
+        </div>
+        <div id="scientificbtns">
+            <div id="row-2">
+                <a class="btn op2" onclick='singlefunction("x^2")'>x<sup>2</sup></a>
+                <a class="btn op4" onclick='binaryfxn("x^y")'>x<sup>y</sup></a>
+                <a class="btn op5" id="sine" onclick='trigfxn("sine")'>sin</a>
+                <a class="btn op5" id="cosine" onclick='trigfxn("cosine")'>cos</a>
+                <a class="btn op5" id="tangent" onclick='trigfxn("tangent")'>tan</a>
+                <a class="btn op3" onclick='clearexp()'>CE</a>
+                <a class="btn op3" onclick='clearall()'>C</a>
+                <a class="btn op3" onclick='bkspc()'>&larr;</a>
+                <a class="btn op1" onclick='operator("/")'>&divide;</a>
+            </div>
+
+            <div id="row-2">
+                <a class="btn op4" onclick='singlefunction("!")'>n!</a>
+                <a class="btn op2" onclick='singlefunction("x^3")'>x<sup>3</sup></a>
+                <a class="btn op5" id="Asine" onclick='trigfxn("Asine")'>sin<sup>-1</sup></a>
+                <a class="btn op5" id="Acosine" onclick='trigfxn("Acosine")'>cos<sup>-1</sup></a>
+                <a class="btn op5" id="Atangent" onclick='trigfxn("Atangent")'>tan<sup>-1</sup></a>
+                <a class="btn num" onclick='num("7")'>7</a>
+                <a class="btn num" onclick='num("8")'>8</a>
+                <a class="btn num" onclick='num("9")'>9</a>
+                <a class="btn op1" onclick='operator("*")'>&times;</a>
+            </div>
+
+            <div id="row-2">
+                <a class="btn op3" onclick='PIval()'>Pi</a>
+                <a class="btn op3" onclick='singlefunction("root")'>&radic;</a>
+                <a class="btn op4" onclick='singlefunction("10^x")'>10<sup>x</sup></a>
+                <a class="btn op4" onclick='singlefunction("log")'>log</a>
+                <a class="btn op4" onclick='binaryfxn("alogn")'>log<sub>a</sub>N</a>
+                <a class="btn num" onclick='num("4")'>4</a>
+                <a class="btn num" onclick='num("5")'>5</a>
+                <a class="btn num" onclick='num("6")'>6</a>
+                <a class="btn op1" onclick='operator("-")'>&minus;</a>
+            </div>
+
+            <div id="row-2">
+                <a class="btn op2" onclick='singlefunction("1/x")'>1/x</a>
+                <a class="btn op4" onclick='singlefunction("e^x")'>e<sup>x</sup></a>
+                <a class="btn op6" onclick='singlefunction("ln")'>ln</a>
+                <a class="btn op6" onclick='singlefunction("abs")'>abs</a>
+                <a class="btn op6" onclick='singlefunction("log2")'>log<sub>2</sub>N</a>
+                <a class="btn num" onclick='num("1")'>1</a>
+                <a class="btn num" onclick='num("2")'>2</a>
+                <a class="btn num" onclick='num("3")'>3</a>
+                <a class="btn op1" onclick='operator("+")'>&plus;</a>
+            </div>
+
+            <div id="row-2">
+                <a class="btn op3" onclick='singlefunction("cbrt")'>&#8731;</a>
+                <a class="btn op4" onclick='singlefunction("int")'>int</a>
+                <a class="btn op7" onclick='comma()'>,</a>
+                <a class="btn op7" onclick='bracketOpen()'>(</a>
+                <a class="btn op7" onclick='bracketClose()'>)</a>
+                <a class="btn op2" onclick='negate()'>&plusmn;</a>
+                <a class="btn num" onclick='num("0")'>0</a>
+                <a class="btn" id="point" onclick='dp()'>.</a>
+                <a class="btn" id="equal" onclick='equalto()'>&equals;</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

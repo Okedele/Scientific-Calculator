@@ -1,0 +1,140 @@
+body {
+    background-color: rgba(219, 216, 7, 0.884);
+    /* background-image: url(assets/Cover%20A.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.inputs {
+    display: block;
+    width: 100%;
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    height: auto;
+}
+
+#adis {
+    width: inherit;
+    height: 20px;
+    border-style: none;
+    background-color: inherit;
+    font-size: 85%;
+    text-align: right;
+    font-weight: 800;
+    color: black;
+}
+
+#dis {
+    width: inherit;
+    height: auto;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: right;
+    display: block;
+    border-style: none;
+    background-color: inherit;
+    color: black;
+}
+
+#scientific {
+    display: block;
+    background-color: inherit;
+    width: 100%;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-top-style: solid;
+    border-top-width: thin;
+    height: auto;
+}
+
+#modemenu {
+    /* width: 30%; */
+    height: auto;
+    background-color: inherit;
+    text-align: right;
+}
+
+.mode {
+    display: inline-block;
+    /* width: 23.6%; */
+    text-align: center;
+    height: 20px;
+    margin: 0px;
+    color: white;
+}
+
+.mode:hover {
+    cursor: default;
+    background-color: rgba(221, 232, 255, 0.4);
+}
+
+#scientificbtns {
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-top-style: solid;
+    border-top-width: thin;
+    padding-left: 2%;
+}
+
+#row-2 {
+    width: inherit;
+    height: auto;
+    margin-bottom: 0px
+}
+
+.btn {
+    display: inline-block;
+    width: 10.5%;
+    text-align: center;
+    height: auto;
+    margin: 0px;
+    border-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+    color: black;
+    /* border-radius: 10px; */
+    border: thin solid black;
+    margin-bottom: 2px;
+}
+
+.btn:hover {
+    cursor: default;
+    background-color: rgba(200, 255, 231, 0.3);
+}
+
+#equal {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+#point {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.num {
+    font-size: 20px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 0px;
+    border-color: red;
+    border: thin solid black;
+}
+
+.op1,
+#mult,
+.op2,
+.op3,
+.op4,
+.op5,
+.op6,
+.op7 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#equal:hover {
+    background-color: coral;
+    cursor: default;
+}
